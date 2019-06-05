@@ -15,7 +15,7 @@ app = Flask(__name__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
 # UPLOAD_FOLDER = dir_path + '/uploads'
 # STATIC_FOLDER = dir_path + '/static'
-UPLOAD_FOLDER = 'uploads'
+UPLOAD_FOLDER = '/upload'
 MODEL_FOLDER = 'static/model'
 
 # load and prepare the image
@@ -83,4 +83,6 @@ def send_file(filename):
     return send_from_directory(UPLOAD_FOLDER, filename)
 
 if __name__ == '__main__':
+    debug = True
     app.run(debug=True)
+    debug = True
