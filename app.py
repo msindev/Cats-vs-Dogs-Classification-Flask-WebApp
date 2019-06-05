@@ -15,7 +15,7 @@ app = Flask(__name__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
 # UPLOAD_FOLDER = dir_path + '/uploads'
 # STATIC_FOLDER = dir_path + '/static'
-UPLOAD_FOLDER = '/upload'
+UPLOAD_FOLDER = '/tmp'
 MODEL_FOLDER = 'static/model'
 
 # load and prepare the image
