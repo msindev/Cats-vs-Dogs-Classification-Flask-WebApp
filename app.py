@@ -18,7 +18,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 UPLOAD_FOLDER = '/tmp'
 MODEL_FOLDER = 'static/model'
 
-# load and prepare the image
+# Load And Prepare The Image
 def load_image(filename):
     # load the image
     img = load_img(filename, target_size=(224, 224))
